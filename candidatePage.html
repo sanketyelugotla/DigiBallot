@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiBallot</title>
+    <link rel="shortcut icon" href="./pics/expertadvice.webp" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_2.css" />
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+</head>
+
+<header class="header">
+    <nav class="nav">
+        <a href="#" class="nav_logo">DigiBallot</a>
+
+        <ul class="nav_items">
+            <li class="nav_item">
+                <a href="main.html" class="nav_link">Home</a>
+                <a href="#" class="nav_link">About</a>
+                <a href="#" class="nav_link">Services</a>
+                <a href="#" class="nav_link">Contact</a>
+            </li>
+        </ul>
+
+        <button class="button" id="form-open">Login</button>
+    </nav>
+</header>
+
+<body>
+    <section class="home">
+        <div class="form_container">
+            <i class="uil uil-times form_close"></i>
+            <div class="form login_form">
+                <form action="#">
+                    <h2>Login</h2>
+
+                    <div class="input_box">
+                        <input type="email" placeholder="Enter your email" required />
+                        <i class="uil uil-envelope-alt email"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Enter your password" required />
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+                    <div class="input_box">
+                        <select id="userType" required>
+                            <option value="">Select user type</option>
+                            <option value="admin">Admin</option>
+                            <option value="voter">Voter</option>
+                            <option value="candidate">Candidate</option>
+                        </select>
+                    </div>
+                    <div class="option_field">
+                        <span class="checkbox">
+                            <input type="checkbox" id="check" />
+                            <label for="check">Remember me</label>
+                        </span>
+                        <a href="#" class="forgot_pw">Forgot password?</a>
+                    </div>
+
+                    <button class="button">Login Now</button>
+
+                    <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+                </form>
+            </div>
+
+            <div class="form signup_form">
+                <form action="#">
+                    <h2>Signup</h2>
+
+                    <div class="input_box">
+                        <input type="email" placeholder="Enter your email" required />
+                        <i class="uil uil-envelope-alt email"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Create password" required />
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Confirm password" required />
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+
+                    <button class="button">Signup Now</button>
+
+                    <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="intro">
+        <p id="p1"> Welcome to DigiBallot!</p>
+        <p id="p2"> Select any Service, to continue </p>
+    </div>
+
+    <section class="services" id="services">
+
+        <h1 style="font-size: 35px;" id="p2"> Our Services </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="./pics/s-1.png" alt="">
+                <h3>Register for Election</h3>
+                <p>Fill your details. And make yourself eligible for participating in elections.</p>
+                <form action=""></form>
+                <a id="login" href="./regitestforevent.php">Proceed</a>
+
+            </div>
+
+            <div class="box">
+                <img src="./pics/s-2.png" alt="">
+                <h3>Caste Vote</h3>
+                <p>Proceed to cast your vote. You can cast your vote only once.</p>
+                <a href="#" class="btn">Proceed</a>
+            </div>
+
+            <div class="box">
+                <img src="./pics/s-3.png" alt="">
+                <h3>View Results</h3>
+                <p>View the results of the election.</p>
+                <a href="#" class="btn">Proceed</a>
+            </div>
+
+        </div>
+
+    </section>
+    <div id="gallery10">
+        <p id="pg"> <small> Candidate </small> <br> Details</p>
+        <div id="gallery1" class="gallery">
+            <div id="block">
+                <img src="./student_pics/1.avif" alt="apartment">
+                <p class="para" id="para">Naval Apartments </p>
+                <p class="para"> &#8377 25 lakhs</p>
+                <p id="para2"><ion-icon name="location-outline"></ion-icon> Visakhapatnam</p>
+            </div>
+            <div id="block">
+                <img src="./student_pics/2.avif" alt="apartment">
+                <p class="para" id="para">Neo Imperial </p>
+                <p class="para"> &#8377 52 lakhs</p>
+                <p id="para2"><ion-icon name="location-outline"></ion-icon> Indore</p>
+            </div>
+            <div id="block">
+                <img src="./student_pics/3.avif" alt="apartment">
+                <p class="para" id="para">Phoenix </p>
+                <p class="para"> &#8377 2.9 Crores</p>
+                <p id="para2"><ion-icon name="location-outline"></ion-icon> Hyderabad</p>
+            </div>
+            <div id="block">
+                <img src="./student_pics/4.avif" alt="apartment">
+                <p class="para" id="para">Hill Top House </p>
+                <p class="para"> &#8377 2 Crores</p>
+                <p id="para2"><ion-icon name="location-outline"></ion-icon> Darjeeling</p>
+            </div>
+        </div>
+        <div id="gallery2" class="gallery">
+            <div id="block">
+                <img src="./student_pics/5.avif" alt="apartment">
+                <p class="para" id="para">Urbania Trinity </p>
+                <p class="para"> &#8377 30 lakhs</p>
+                <p id="para2"><ion-icon name="location-outline"></ion-icon> Mumbai</p>
+            </div>
+            <div id="block">
+                <img src="./student_pics/6.avif" alt="apartment">
+                <p class="para" id="para">Metropolis </p>
+                <p class="para"> &#8377 3 Crores</p>
+                <p id="para2"><ion-icon name="location-outline"></ion-icon> Delhi</p>
+            </div>
+            <div id="block">
+                <img src="./student_pics/15.jpg" alt="apartment">
+                <p class="para" id="para">Omkar Bhavan</p>
+                <p class="para"> &#8377 32 lakhs</p>
+                <p id="para2"><ion-icon name="location-outline"></ion-icon> kolkata</p>
+            </div>
+            <div id="block">
+                <img src="./student_pics/1.avif" alt="apartment">
+                <p class="para" id="para">Hari Township </p>
+                <p class="para"> &#8377 25 lakhs</p>
+                <p id="para2"><ion-icon name="location-outline"></ion-icon> Bengaluru</p>
+            </div>
+        </div>
+        <div>
+            <p id="p1">
+                What makes us prefered choice.
+        </div>
+        <div id="choice">
+            <div>
+                <img src="./pics/s-1 copy.png" alt="apartment">
+                <p>Maximum choice</p>
+            </div>
+            <div>
+                <img src="./pics/trust.png" alt="apartment">
+                <p>Real-time result tracking</p>
+            </div>
+            <div>
+                <img src="./pics/prefer.png" alt="apartment">
+                <p>Guarentee Security</p>
+            </div>
+            <div>
+                <img src="./pics/expert-option.png" alt="apartment">
+                <p>User Authentication</p>
+            </div>
+            </p>
+        </div>
+        <div id="cities">
+            <p id="p1">Top cities in India</p>
+            <div id="cities1">
+                <div><img src="./pics/vizag.jpg" alt="vizag">
+                    <p>Vizag</p>
+                </div>
+                <div><img src="./pics/delhi.jpg" alt="delhi">
+                    <p>Delhi</p>
+                </div>
+                <div><img src="./pics/mumbai.jpg" alt="">
+                    <p>Mumbai</p>
+                </div>
+                <div><img src="./pics/kolkata.jpg" alt="">
+                    <p>kolkata</p>
+                </div>
+                <div><img src="./pics/bengaluru.jpg" alt="">
+                    <p>bengaluru</p>
+                </div>
+                <div><img src="./pics/chennai.jpg" alt="">
+                    <p>chennai</p>
+                </div>
+                <div><img src="./pics/hyderabad.jpg" alt="">
+                    <p>hyderabad</p>
+                </div>
+            </div>
+        </div>
+        <div id="foot">
+            <div id="about">
+                <p id="h1"> About Us</p>
+                <p id="h2">Skyheights is a fast growing real estate website among the various property sites in India.
+                    It'sestablished to help you Buy, Rent, Sell Property in India. Hundreds of new real estate projects
+                    in
+                    India
+                    having new and resale properties for sale are being added every month in our database. You can find
+                    vast
+                    number of residential and commercial property options on our website including Independent House,
+                    Villas,
+                    Residential Land, Factory, Agricultural Land, Farm House, Studio Apartment, Showrooms, Business/IT
+                    Park,
+                    etc. We offer variety of possible tools and options to advertise your property for rent or sell, to
+                    help
+                    you
+                    take profitable decisions for your property by connecting you with the realtors.
+            </div>
+            <div id="contact">
+                <!-- <div> -->
+                <p id="h3">Stay in Touch</p>
+                <p style="padding-bottom:0;" id="h4">
+                    <ion-icon id="bion" name="location-outline"></ion-icon>LPU BH:6
+                </p>
+                <p id="h4">
+                    <ion-icon id="bion" name="call"></ion-icon>9550572255 <br>
+                    <ion-icon id="bion" name="call"></ion-icon>8008385927
+                </p>
+                <!-- </div> -->
+                <!-- <div> -->
+                <p id="h3">Social Media</p>
+                <p id="social">
+                    <a target="_blank" href="https://www.facebook.com"><ion-icon id="bion" class="icon"
+                            name="logo-facebook"></ion-icon></a>
+                    <a target="_blank" href="https://www.instagram.com"><ion-icon id="bion"
+                            name="logo-instagram"></ion-icon></a>
+                    <a target="_blank" href="https://twitter.com/?lang=en-in"><ion-icon id="bion"
+                            name="logo-twitter"></ion-icon></a>
+                    <a target="_blank" href="https://web.whatsapp.com"><ion-icon id="bion"
+                            name="logo-whatsapp"></ion-icon></a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

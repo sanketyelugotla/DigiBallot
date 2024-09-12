@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiBallot</title>
+    <link rel="shortcut icon" href="./pics/expertadvice.webp" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_2.css" />
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+</head>
+
+<header class="header">
+    <nav class="nav">
+        <a href="#" class="nav_logo">DigiBallot</a>
+
+        <ul class="nav_items">
+            <li class="nav_item">
+                <a href="#" class="nav_link">Home</a>
+                <a href="#" class="nav_link">About</a>
+                <a href="#" class="nav_link">Services</a>
+                <a href="#" class="nav_link">Contact</a>
+            </li>
+        </ul>
+
+        <button class="button" id="form-open">Login</button>
+    </nav>
+</header>
+
+
+<body>
+    <section class="home">
+        <div class="form_container">
+            <i class="uil uil-times form_close"></i>
+            <div class="form login_form">
+                <form action="test1.php" method="post">
+                    <h2>Login</h2>
+
+                    <div class="input_box">
+                        <input name="email" type="email" placeholder="Enter your email" required />
+                        <i class="uil uil-envelope-alt email"></i>
+                    </div>
+                    <div class="input_box">
+                        <input name="password" type="password" placeholder="Enter your password" required />
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+                    <div class="input_box">
+                        <select name="user" id="userType" required>
+                            <option value="">Select user type</option>
+                            <option value="admin">Admin</option>
+                            <option value="users">Voter</option>
+                            <option value="candidate">Candidate</option>
+                        </select>
+                    </div>
+                    <div class="option_field">
+                        <span class="checkbox">
+                            <input type="checkbox" id="check" />
+                            <label for="check">Remember me</label>
+                        </span>
+                        <a href="#" class="forgot_pw">Forgot password?</a>
+                    </div>
+
+                    <button class="button">Login Now</button>
+
+                    <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+                </form>
+            </div>
+
+            <!-- <div id="intro">
+                <p id="p1"> Welcome to skyheights!</p>
+                <p id="p2"> Select your Location, Property type and Budget to continue </p>
+            </div> -->
+
+            <div class="form signup_form">
+                <form action="#">
+                    <h2>Signup</h2>
+
+                    <div class="input_box">
+                        <input type="email" placeholder="Enter your email" required />
+                        <i class="uil uil-envelope-alt email"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Create password" required />
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Confirm password" required />
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+
+                    <button class="button">Signup Now</button>
+
+                    <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="intro">
+        <p id="p1"> Welcome to DigiBallot!</p>
+        <p id="p2"> Select any Service, to continue </p>
+
+        <section class="services" id="services">
+
+            <h1 style="font-size: 35px;" id="p2"> Our Services </h1>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <img src="./pics/s-1.png" alt="">
+                    <h3>User Login</h3>
+                    <p>Users can able to login, See the elections available, See the Candidates and their details. And
+                        can
+                        cast their vote. And after the results are published Users can instantly view the results.</p>
+                    <a href="#" class="btn">Proceed to Login</a>
+                </div>
+
+                <div class="box">
+                    <img src="./pics/s-2.png" alt="">
+                    <h3>Candidate Login</h3>
+                    <p>Candidates can register for participating in election by filling their details. They can also
+                        cast
+                        their vote. And view results of the polling after the results are published .</p>
+                    <a href="#" class="btn">Proceed to Login</a>
+                </div>
+
+                <div class="box">
+                    <img src="./pics/s-3.png" alt="">
+                    <h3>Administrator Login</h3>
+                    <p>Administrator creates the election option. Candidates can then register for participation in
+                        election. And administrator can decide when to publish the results of the polling.</p>
+                    <a href="#" class="btn">Proceed to Login</a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div>
+            <p id="p1">
+                What makes us prefered choice.
+        </div>
+        <div id="choice">
+            <div>
+                <img src="./pics/s-1 copy.png" alt="apartment">
+                <p>Maximum choice</p>
+            </div>
+            <div>
+                <img src="./pics/trust.png" alt="apartment">
+                <p>Real-time result tracking</p>
+            </div>
+            <div>
+                <img src="./pics/prefer.png" alt="apartment">
+                <p>Guarentee Security</p>
+            </div>
+            <div>
+                <img src="./pics/expert-option.png" alt="apartment">
+                <p>User Authentication</p>
+            </div>
+            </p>
+        </div>
+        <div id="cities">
+            <p id="p1">Top cities in India</p>
+            <div id="cities1">
+                <div><img src="./pics/vizag.jpg" alt="vizag">
+                    <p>Vizag</p>
+                </div>
+                <div><img src="./pics/delhi.jpg" alt="delhi">
+                    <p>Delhi</p>
+                </div>
+                <div><img src="./pics/mumbai.jpg" alt="">
+                    <p>Mumbai</p>
+                </div>
+                <div><img src="./pics/kolkata.jpg" alt="">
+                    <p>kolkata</p>
+                </div>
+                <div><img src="./pics/bengaluru.jpg" alt="">
+                    <p>bengaluru</p>
+                </div>
+                <div><img src="./pics/chennai.jpg" alt="">
+                    <p>chennai</p>
+                </div>
+                <div><img src="./pics/hyderabad.jpg" alt="">
+                    <p>hyderabad</p>
+                </div>
+            </div>
+        </div>
+        <div id="foot">
+            <div id="about">
+                <p id="h1"> About Us</p>
+                <p id="h2"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ratione deleniti
+                    quas, ea dolor blanditiis deserunt voluptate autem at veniam architecto nemo quisquam fugiat facere
+                    accusantium soluta magni possimus vero.
+            </div>
+            <div id="contact">
+                <!-- <div> -->
+                <p id="h3">Stay in Touch</p>
+                <p style="padding-bottom:0;" id="h4">
+                    <ion-icon id="bion" name="location-outline"></ion-icon>LPU BH:6
+                </p>
+                <p id="h4">
+                    <ion-icon id="bion" name="call"></ion-icon>9550572255 <br>
+                    <ion-icon id="bion" name="call"></ion-icon>8008385927
+                </p>
+                <!-- </div> -->
+                <!-- <div> -->
+                <p id="h3">Social Media</p>
+                <p id="social">
+                    <a target="_blank" href="https://www.facebook.com"><ion-icon id="bion" class="icon"
+                            name="logo-facebook"></ion-icon></a>
+                    <a target="_blank" href="https://www.instagram.com"><ion-icon id="bion"
+                            name="logo-instagram"></ion-icon></a>
+                    <a target="_blank" href="https://twitter.com/?lang=en-in"><ion-icon id="bion"
+                            name="logo-twitter"></ion-icon></a>
+                    <a target="_blank" href="https://web.whatsapp.com"><ion-icon id="bion"
+                            name="logo-whatsapp"></ion-icon></a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
